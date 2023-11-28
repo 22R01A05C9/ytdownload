@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+    <title>Youtube Video Download</title>
+</head>
+
+<script>
+    var link="{{link}}"
+    function download(){
+        window.open(link)
+    }
+</script>
+
+<body>
+    <div class="main">
+        <div class="form">
+            <form action="/download" method="post">
+                <input type="url" placeholder="Paste Youtube Link" name="url" required>
+                <button type="submit">Download</button>
+            </form>
+        </div>
+        <div class="output">
+            <div class="info">
+                <p>{{info}}</p>
+            </div>
+            {% if title %}
+            <div class="download">
+                <p>{{title}}</p>
+                <button onclick="download()">Download Video</button>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</body>
+
+</html>
