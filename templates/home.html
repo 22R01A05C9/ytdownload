@@ -14,9 +14,11 @@
 </head>
 {% if endlink %}
 <script>
+    const link='{{endlink}}';
+    const link1=link.replaceAll('amp;','');
     function down(){
-        var link='{{endlink}}';
-        window.open(link);
+        console.log(link1);
+        window.open(link1);
     }
 </script>
 {% endif %}
