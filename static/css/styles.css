@@ -4,18 +4,15 @@ body {
     font-family: 'Roboto', sans-serif;
     font-family: 'Ubuntu', sans-serif;
 }
-
 .main {
     height: auto;
 }
-
 .main h2 {
     margin: 25px auto;
     width: 250px;
     text-align: center;
     color: black;
 }
-
 .input input {
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -25,20 +22,16 @@ body {
     height: 30px;
     font-size: large;
     border-radius: 4px;
-
+    width: 275px;
 }
-
 .input {
-    position: absolute;
-    top: 18%;
-    left: 40%;
-    transform: translate(-40%, 0%);
+    position: relative;
+    top: 30px;
+    text-align: center;
 }
-
 .input p {
     font-size: large;
 }
-
 .input button {
     padding: 8px;
     border-radius: 5px;
@@ -53,32 +46,28 @@ body {
     transform: translate(-50%, 60%);
     color: black;
 }
-
 .title h3 {
     margin: 10px;
+    text-align: center;
 }
-
 .title h4 {
     margin: 10px;
+    text-align: center;
 }
-
-
 .output {
     position: absolute;
     top: 43%;
     left: 5%;
     right: 3%;
 }
-
 .head {
-    display: inline;
-    position: absolute;
-    top: 80%;
-    right: 20%;
-    transform: translate(-3%, 50%);
+    position: relative;
+    top: 23px;
     color: #066ff5bf;
 }
-
+.options {
+    text-align: center;
+}
 .options select {
     outline: none;
     border: thin solid black;
@@ -88,21 +77,19 @@ body {
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
     outline: none;
-    position: absolute;
-    top: 135%;
-    left: 50%;
-    transform: translate(-51%, 20%);
+    position: relative;
+    top: 25px;
     height: 30px;
     width: 250px;
 }
-
 .options select option {
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-family: 'Roboto', sans-serif;
     font-family: 'Ubuntu', sans-serif;
-
 }
-
+.opbutton {
+    text-align: center;
+}
 .convert {
     padding: 8px;
     border-radius: 5px;
@@ -111,13 +98,10 @@ body {
     background-image: linear-gradient(to right, #06aef5, #13e5ea);
     text-align: center;
     margin-top: 10px;
-    position: absolute;
-    top: 140%;
-    left: 50%;
-    transform: translate(-50%, 100%);
+    position: relative;
+    top: 35px;
     color: black;
 }
-
 .download {
     padding: 8px;
     border-radius: 5px;
@@ -126,18 +110,7 @@ body {
     background-image: linear-gradient(to right, #06aef5, #13e5ea);
     text-align: center;
     margin-top: 10px;
-    position: absolute;
-    top: 185%;
-    left: 50%;
-    transform: translate(-50%, 100%);
+    position: relative;
+    top: 40px;
     color: black;
-}
-
-.info {
-    color: rgb(252, 58, 58);
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, 10%);
-    font-size: medium;
 }
