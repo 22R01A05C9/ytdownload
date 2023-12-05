@@ -13,6 +13,12 @@ body {
     text-align: center;
     color: black;
 }
+.info{
+    position: relative;
+    text-align: center;
+    color: rgb(255 0 0 / 81%);
+    top:80px;
+}
 .input input {
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-family: 'Roboto', sans-serif;
